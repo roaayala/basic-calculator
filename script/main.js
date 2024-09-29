@@ -1,9 +1,25 @@
+// math operator
 const add = (x, y) => x + y;
 const subtract = (x, y) => x - y;
 const multiply = (x, y) => x * y;
 const divide = (x, y) => x / y;
 
-console.log(add(1, 2));
-console.log(subtract(1, 2));
-console.log(multiply(4, 2));
-console.log(divide(10, 5));
+// operation
+const operate = (numberOne, numberTwo, operator) => {
+  switch (operator) {
+    case '+':
+      return add(numberOne, numberTwo);
+    case '-':
+      return subtract(numberOne, numberTwo);
+    case '*':
+      return multiply(numberOne, numberTwo);
+    case '/':
+      return divide(numberOne, numberTwo);
+  }
+};
+
+let firstNumber = 4;
+let secondNumber = 2;
+let operator = '/';
+
+console.log(operate(firstNumber, secondNumber, operator));

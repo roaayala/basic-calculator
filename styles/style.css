@@ -100,10 +100,10 @@ body {
   gap: 8px;
 }
 .button {
-  flex: 20%;
+  flex: 3 20%;
   height: 40px;
   font-weight: bold;
 }
 #zero {
-  flex: 46%;
+  flex: 40 20%;
 }
